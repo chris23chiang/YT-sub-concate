@@ -7,7 +7,7 @@ class Step(ABC):  # 繼承ABC就變成一個抽象類別
         pass
 
     @abstractmethod  # 至少要有一個abstract method
-    def process(self, data, inputs):
+    def process(self, data, inputs, utils):
         pass
 
 
