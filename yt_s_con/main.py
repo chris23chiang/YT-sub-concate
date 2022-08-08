@@ -1,6 +1,7 @@
+from yt_s_con.pipeline.steps.preflight import Preflight
 from yt_s_con.pipeline.steps.get_video_list import GetVideoList
 from yt_s_con.pipeline.steps.download_captions import DownloadCaptions
-from yt_s_con.pipeline.steps.preflight import Preflight
+from yt_s_con.pipeline.steps.read_caption import ReadCaption
 from yt_s_con.pipeline.steps.postflight import Postlight
 from yt_s_con.pipeline.steps.step import StepException
 from yt_s_con.pipeline.pipeline import Pipeline
@@ -18,6 +19,7 @@ def main():
         Preflight(),
         GetVideoList(),
         DownloadCaptions(),
+        ReadCaption(),
         Postlight(),
         ]
 
